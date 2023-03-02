@@ -572,7 +572,9 @@ func ReliabilityInitAndLogin(index int, uid, tk, ws, api string) {
 	lg.Login(&callback, uid, tk, operationID)
 
 	for {
-		if callback.errCode == 1 && testConversation.SyncFlag == 1 {
+		// if callback.errCode == 1 && testConversation.SyncFlag == 1 {
+
+		if callback.errCode == 1 {
 			log.Warn(operationID, "login ok, and sync finished ", uid)
 			return
 		} else {

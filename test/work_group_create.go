@@ -11,9 +11,9 @@ import (
 	"time"
 )
 
-var (
-	INVITEUSERTOGROUP = ""
-)
+// var (
+// 	INVITEUSERTOGROUP = ""
+// )
 
 func InviteListToGroup(userIDList []string, groupID string) {
 	var inviteReq server_api_params.InviteUserToGroupReq

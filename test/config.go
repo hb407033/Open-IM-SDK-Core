@@ -27,6 +27,7 @@ var (
 	CREATEGROUP         = APIADDR + constant.CreateGroupRouter
 	ACCOUNTCHECK        = APIADDR + "/user/account_check"
 	GETGROUPSINFOROUTER = APIADDR + constant.GetGroupsInfoRouter
+	INVITEUSERTOGROUP   = APIADDR + constant.InviteUserToGroupRouter
 )
 
 var coreMgrLock sync.RWMutex
